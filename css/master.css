@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Mono|Roboto");
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; }
+
+.amazon__text {
+  font-size: 12px; }
+
+.amazon__name, .amazon__title {
+  font-family: 'PT Mono', monospace;
+  color: #007C4C; }
+
+.amazon__text {
+  font-family: 'Roboto', sans-serif; }
+
+.amazon__image {
+  width: 100%; }
+
+.amazon__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #DDDDDD;
+  flex: 1; }
+
+.amazon__head-img {
+  width: 50%;
+  padding-bottom: 20px; }
+
+.amazon__content {
+  display: flex;
+  flex-direction: column; }
+
+.amazon__item {
+  width: 260px;
+  height: 449px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 20px;
+  background-color: #FFF;
+  border: 1px #CCC solid; }
+
+.amazon__item_head {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFF; }
+
+@media screen and (min-width: 768px) {
+  .amazon__content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 1600px; } }
+
+@media screen and (min-width: 1024px) {
+  .amazon__content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 1100px; } }
